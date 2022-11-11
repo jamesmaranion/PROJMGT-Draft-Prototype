@@ -1,0 +1,336 @@
+:root {
+    --black-rgba: rgba(0, 0, 0, 0.2);
+    --blue: rgb(134, 193, 241);
+    --Pink: #FE657D;
+    --Pink-after: #ff6c82;
+    --Pastel-Pink: #FCB2A9;
+    --Cream: #E3E3DB;
+    --Mint: #94E4C9;
+    --Green: #509B7D;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-body-font-family: var(--bs-font-sans-serif);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    background-color: var(--Cream);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.home {
+    margin-left: 5%;
+    display: flex;
+}
+
+.home img {
+    height: 90%;
+}
+
+a:hover {
+    color: var(--Cream);
+}
+
+button {
+    transition: all .5s ease-in-out;
+}
+
+
+/* Navbar */
+
+nav {
+    position: relative;
+    height: 80px;
+    background-color: var(--Green);
+    display: flex;
+}
+
+nav h1 {
+    position: absolute;
+    left: 10%;
+    text-transform: uppercase;
+}
+
+nav h1:hover {
+    cursor: pointer;
+}
+
+nav .details {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+}
+
+nav .signin {
+    position: absolute;
+    top: 25px;
+    right: 10%;
+}
+
+
+/* Navbar-End */
+
+
+/* Banner */
+
+.banner {
+    background-color: var(--Green);
+    height: 980px;
+    content: '';
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0% 100%);
+    display: flex;
+    transition: all .5s ease-in-out;
+}
+
+.banner .info {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 652px;
+}
+
+.banner .info h1 {
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.banner .info p {
+    font-size: 18px;
+}
+
+.info button {
+    background-color: var(--Pink);
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 45px;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(37, 37, 37);
+    border-bottom: 2px solid var(--black-rgba);
+}
+
+button:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.box-icon {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+}
+
+
+/* Banner-end */
+
+
+/* Banner-2 */
+
+.rectangle {
+    position: relative;
+    background-color: var(--Mint);
+    height: 980px;
+    content: '';
+    clip-path: polygon(-50% 65%, 42.8% 0, 200% 50%, 100% 100%);
+    transform: translateY(-30%);
+    transition: all .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle .stocks-icon {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 30%;
+    bottom: 20%;
+}
+
+.rectangle h1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 43.5%;
+    bottom: 30%;
+}
+
+.rectangle p {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    left: 32%;
+    bottom: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+/* Banner-2-End */
+
+
+/* About-Us */
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.about .info {
+    height: 300px;
+    width: 700px;
+    margin-left: 10%;
+    transform: translateY(-90%);
+}
+
+.about img {
+    margin-left: 10%;
+    transform: translateY(-85%);
+}
+
+
+/* About-Us-End */
+
+
+/* Icons */
+
+.socmed {
+    display: flex;
+    flex-direction: column;
+    margin-left: 43.5%;
+    margin-bottom: 3%;
+}
+
+.socmed h2 {
+    margin-left: 1%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--Green);
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    text-align: right;
+    margin-right: 50px;
+}
+
+footer button {
+    background-color: var(--Pink);
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(37, 37, 37);
+    border-bottom: 2px solid var(--black-rgba);
+}
+
+@media only screen and (max-width: 1500px) {
+    nav h1 {
+        margin-left: 2%;
+    }
+    .box-icon {
+        display: none;
+    }
+    .banner {
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    }
+    .rectangle {
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+        transform: translateY(-50%);
+    }
+    .rectangle .stocks-icon {
+        width: 400px;
+        height: 300px;
+        left: 2%;
+        bottom: 60%;
+    }
+    .rectangle .info {
+        position: absolute;
+        right: 10%;
+        bottom: 60%;
+        width: 400px;
+    }
+    .about {
+        transform: translateY(-310%);
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .rectangle .stocks-icon {
+        display: none;
+    }
+    .rectangle .info {
+        right: 25%;
+    }
+    .about {
+        transform: translateY(-200%);
+    }
+    nav h1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    nav h1 {
+        display: none;
+    }
+    .banner {
+        height: auto;
+    }
+    .rectangle {
+        height: auto;
+    }
+}
