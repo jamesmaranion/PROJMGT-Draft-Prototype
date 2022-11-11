@@ -4,6 +4,6 @@ This is a basic prototype of the SAFFY Website Prototype.
 
 ## Preview
 
-[![SAFFY Preview](https://assets.startbootstrap.com/img/screenshots/templates/shop-homepage.png)](https://startbootstrap.github.io/startbootstrap-shop-homepage/)
+[![SAFFY Preview](https://assets.startbootstrap.com/img/screenshots/templates/shop-homepage.png)](https://htmlpreview.github.io/?https://github.com/jamesmaranion/PROJMGT-Draft-Prototype/blob/master/dist/index.html)
 
 **[View Live Preview](https://startbootstrap.github.io/startbootstrap-shop-homepage/)**
