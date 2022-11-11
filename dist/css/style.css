@@ -146,6 +146,7 @@ button:hover {
     transition: all .5s ease-in-out;
     display: flex;
     flex-direction: column;
+    border: 2px solid red;
 }
 
 .rectangle .stocks-icon {
@@ -176,6 +177,42 @@ button:hover {
 
 
 /* Banner-2-End */
+
+.products {
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 500px;
+    margin-left: 6.5%;
+}
+
+.prod-link {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+.prod-link h1 {
+    margin-left: 45%;
+}
+
+.card {
+    background-color: #FFFFFF;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 345px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card .info {
+    padding: 2px 16px;
+}
 
 
 /* About-Us */
@@ -290,21 +327,26 @@ footer button {
     .rectangle {
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
         transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .rectangle h1 {
+        bottom: 40%;
+    }
+    .rectangle p {
+        left: 26.5%;
     }
     .rectangle .stocks-icon {
         width: 400px;
         height: 300px;
-        left: 2%;
-        bottom: 60%;
+        bottom: 55%;
+        left: 26.4%;
     }
-    .rectangle .info {
-        position: absolute;
-        right: 10%;
-        bottom: 60%;
-        width: 400px;
-    }
-    .about {
-        transform: translateY(-310%);
+    .rectangle p {
+        left: 29.5%;
+        bottom: 15%;
     }
 }
 

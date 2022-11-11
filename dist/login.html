@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFFY Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+</head>
+
+<body>
+    <div id="lg-form" class="forms">
+
+        <input type="checkbox" id="flip">
+
+        <div class="slider">
+            <h1>"Filled with quality handmade goods"</h1>
+        </div>
+
+        <form action="POST" class="login" id="login">
+
+            <h1>Sign in to SAFFY</h1>
+
+            <span>Email:</span>
+            <input id="se" type="email" placeholder="Email" required>
+
+            <span>Password:</span>
+            <input id="sp" type="password" placeholder="Password" required>
+
+            <input class="btn" type="submit" onclick="login()" value="Login" />
+
+            <label class="link" for="flip">Don't have an account?</label>
+
+        </form>
+
+        <form id="register" action="POST" class="register">
+
+            <h1>Create an Account</h1>
+
+            <span>First Name</span>
+            <input id="firstName" type="text" placeholder="First Name" required>
+
+            <span>Last Name</span>
+            <input id="lastName" type="text" placeholder="Last Name" required>
+
+            <span>Address</span>
+            <input type="text" placeholder="Address" required>
+
+            <span>Email:</span>
+            <input id="email" type="email" placeholder="Email" required>
+
+            <span>Password:</span>
+            <input id="pass" type="password" placeholder="Password" required>
+
+            <span>Re-type Password:</span>
+            <input id="rePass" type="password" placeholder="Re-type Password" required>
+
+            <input class="btn" type="submit" onclick="register()" value="Register" />
+
+            <label class="link" for="flip">Already Have an Account?</label>
+
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
