@@ -20,7 +20,7 @@
             <h1>"Filled with quality handmade goods"</h1>
         </div>
 
-        <form action="POST" class="login" id="login">
+        <form class="login" id="login">
 
             <h1>Sign in to SAFFY</h1>
 
@@ -30,16 +30,15 @@
             <span>Password:</span>
             <input id="sp" type="password" placeholder="Password" required>
 
-            <input class="btn" type="submit" onclick="login()" value="Login" />
-
+            <input type="submit" onclick="login()" value="Submit" />
             <label class="link" for="flip">Don't have an account?</label>
 
         </form>
 
-        <form id="register" action="POST" class="register">
+        <form id="register" class="register">
 
             <h1>Create an Account</h1>
-
+            <!-- 
             <span>First Name</span>
             <input id="firstName" type="text" placeholder="First Name" required>
 
@@ -47,16 +46,16 @@
             <input id="lastName" type="text" placeholder="Last Name" required>
 
             <span>Address</span>
-            <input type="text" placeholder="Address" required>
+            <input type="text" placeholder="Address" required> -->
 
             <span>Email:</span>
-            <input id="email" type="email" placeholder="Email" required>
+            <input id="re" type="email" placeholder="Email" required>
 
             <span>Password:</span>
-            <input id="pass" type="password" placeholder="Password" required>
+            <input id="rp" type="password" placeholder="Password" required>
 
             <span>Re-type Password:</span>
-            <input id="rePass" type="password" placeholder="Re-type Password" required>
+            <input id="rrp" type="password" placeholder="Re-type Password" required>
 
             <input class="btn" type="submit" onclick="register()" value="Register" />
 
@@ -64,7 +63,7 @@
 
         </form>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
