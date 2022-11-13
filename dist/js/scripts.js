@@ -104,6 +104,8 @@ function login() {
 
         document.getElementById("se").value = "";
         document.getElementById("sp").value = "";
+        location.href = 'logged-index.html'
+
         return;
     }
 
