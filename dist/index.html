@@ -5,119 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAFFY, Inc - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>SAFFY Login</title>
+    <link rel="stylesheet" href="css/login.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <nav>
-        <a href="#index.html" class="home">
-            <img src="assets/logo.png" alt="">
-            <h1>SAFFY, Inc</h1>
-        </a>
+    <div id="lg-form" class="forms">
 
-        <div class="details">
-            <a href="about.html">About</a> &nbsp;
-            <a href="contact.html">Contact Us</a> &nbsp;
-            <a href="safrudi.html">SAFRUDI</a> &nbsp;
-            <a href="products.html">Products</a> &nbsp;
+        <input type="checkbox" id="flip">
 
+        <div class="slider">
+            <h1>"Filled with quality handmade goods"</h1>
         </div>
 
-        <a href="login.html" class="signin">Sign in</a>
-    </nav>
+        <form class="login" id="login">
 
-    <div class="banner">
-        <div class="info">
-            <h1>Amazing products deserve <br> Amazing Quality</h1>
-            <p>Welcome to SAFFY a subsidiary of Social Action Foundation for Rural and Urban Development. We are a member of the Fair Trade Organization and we produce handcrafted products.</p>
-            <button onclick="window.location.href='products.html';">View our Products</button>
-        </div>
+            <h1>Sign in to SAFFY</h1>
+
+            <span>Email:</span>
+            <input id="se" type="email" placeholder="Email" required>
+
+            <span>Password:</span>
+            <input id="sp" type="password" placeholder="Password" required>
+
+            <input type="submit" onclick="login()" value="Submit"/>
+            <label class="link" for="flip">Don't have an account?</label>
+
+        </form>
+
+        <form id="register" class="register">
+
+            <h1>Create an Account</h1>
+<!-- 
+            <span>First Name</span>
+            <input id="firstName" type="text" placeholder="First Name" required>
+
+            <span>Last Name</span>
+            <input id="lastName" type="text" placeholder="Last Name" required>
+
+            <span>Address</span>
+            <input type="text" placeholder="Address" required> -->
+
+            <span>Email:</span>
+            <input id="re" type="email" placeholder="Email" required>
+
+            <span>Password:</span>
+            <input id="rp" type="password" placeholder="Password" required>
+
+            <span>Re-type Password:</span>
+            <input id="rrp" type="password" placeholder="Re-type Password" required>
+
+            <input class="btn" type="submit" onclick="register()" value="Register" />
+
+            <label class="link" for="flip">Already Have an Account?</label>
+
+        </form>
     </div>
-
-    <div class="box-icon">
-        <img src="css/images/vase.png" alt="">
-    </div>
-
-    <div class="rectangle">
-        <h1>Our Partnerships</h1>
-        <div class="stocks-icon">
-            <img src="css/images/partnerships.PNG" alt="">
-        </div>
-        <p>Fair Trade seeks to improve the lives of producers and artisans (artisans – a worker in a skilled trade, especially one that involves making things by hand) by guaranteeing they receive fair prices for their products. This enables them to address
-            basic needs like education, health care and gives birth to new opportunities for growth in their livelihood and overall living condition.</p>
-    </div>
-    <div class="prod-link">
-        <h1>Our products</h1>
-    </div>
-
-    <div class="products">
-
-        <div class="card">
-            <img src="assets/images/planter.PNG" alt="">
-            <div class="info">
-                <h4>Ox Planter</h4>
-                <a href="">View Product</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/images/macrame-bag.PNG" alt="">
-            <div class="info">
-                <h4>Macrame Bag</h4>
-                <a href="">View Product</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/images/standing-angel.PNG" alt="">
-            <div class="info">
-                <h4>Standing Angel</h4>
-                <a href="">View Product</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/images/plate.PNG" alt="">
-            <div class="info">
-                <h4>Capiz Plate</h4>
-                <a href="">View Product</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="about" id="About">
-        <div class="info">
-            <h1>A unique value proposition <br> Everything you need with a top-notch user experience.
-            </h1>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                <br>
-                <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            </p>
-
-        </div>
-
-        <img src="css/images/producers.PNG" alt="">
-    </div>
-
-    <div class="socmed">
-        <h2>Follow our Social Media!</h2>
-        <div class="links">
-            <span href="#" class="fa fa-facebook"></span> &nbsp;
-            <span href="#" class="fa fa-twitter"></span> &nbsp;
-            <span href="#" class="fa fa-youtube"></span> &nbsp;
-            <span href="#" class="fa fa-instagram"></span> &nbsp;
-        </div>
-
-    </div>
-
-    <footer>
-        <span>Lorem ipsum dolor sit amet <br>
-            No credit card required - Instant access
-        </span>
-        <button onclick="window.location.href='login.html';">Register Now!</button>
-    </footer>
-
+    <script src="C:\Users\ACER\source\PROJMGT-Draft-Prototype-master\PROJMGT-Draft-Prototype-master\src\js\scripts.js"></script>
 </body>
 
 </html>
