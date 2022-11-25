@@ -1,11 +1,12 @@
 :root {
     --black-rgba: rgba(0, 0, 0, 0.2);
+    --black: #000000;
     --blue: rgb(134, 193, 241);
     --Pink: #FE657D;
     --Pink-after: #ff6c82;
     --Pastel-Pink: #FCB2A9;
     --Cream: #E3E3DB;
-    --Mint: #94E4C9;
+    --alt-green: rgb(210, 224, 179);
     --Green: #BBE7C3;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-body-font-family: var(--bs-font-sans-serif);
@@ -19,39 +20,27 @@ body {
     margin: 0;
     font-family: var(--bs-body-font-family);
     background-color: var(--Cream);
-}
-
-section {
-    text-align: center;
-    margin: auto;
-    padding: 0;
+    height: 100vh;
 }
 
 a {
+    color: var(--black);
     text-decoration: none;
-    color: black;
     transition: .3s ease;
 }
 
+a:hover {
+    color: var(--black-rgba);
+}
+
 .home {
-    margin-left: 5%;
+    margin-left: 4%;
     display: flex;
 }
 
 .home img {
     height: 90%;
 }
-
-a:hover {
-    color: var(--Cream);
-}
-
-button {
-    transition: all .5s ease-in-out;
-}
-
-
-/* Navbar */
 
 nav {
     position: relative;
@@ -83,160 +72,128 @@ nav .signin {
 }
 
 
-/* Navbar-End */
+/*Home*/
 
 
-/* Banner */
+/*Video section*/
 
-.banner {
-    background-color: var(--Green);
-    height: 980px;
-    content: '';
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 0% 100%);
+.vid-sec {
+    width: 100%;
+}
+
+.vid-container {
     display: flex;
-    transition: all .5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
 }
 
-.banner .info {
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    width: 652px;
+.vid-sec video {
+    width: 50%;
 }
 
-.banner .info h1 {
-    font-weight: bolder;
-    font-size: 45px;
-}
-
-.banner .info p {
-    font-size: 18px;
-}
-
-.info button {
-    background-color: var(--Pink);
-    border-radius: 10px;
-    border: none;
-    width: 250px;
+.safrudi {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    background-color: var(--alt-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 45px;
-    font-weight: bold;
-    font-size: large;
-    color: rgb(37, 37, 37);
-    border-bottom: 2px solid var(--black-rgba);
-}
-
-button:hover {
-    background-color: var(--blue);
-    cursor: pointer;
-}
-
-.box-icon {
-    position: absolute;
-    top: 25%;
-    right: 15%;
 }
 
 
-/* Banner-end */
+/*Products section*/
 
+.products {
+    width: 100%;
+}
 
-/* Banner-2 */
+.products .prod-tag {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    background-color: var(--Green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 70px;
+}
 
-.rectangle {
-    position: relative;
-    background-color: var(--Mint);
-    height: 980px;
-    content: '';
-    clip-path: polygon(-50% 65%, 42.8% 0, 200% 50%, 100% 100%);
-    transform: translateY(-30%);
-    transition: all .5s ease-in-out;
+.products .product {
     display: flex;
     flex-direction: column;
 }
 
-.rectangle .stocks-icon {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    left: 30%;
-    bottom: 20%;
+.products .product img {
+    height: 250px;
+    width: 250px;
+    border-radius: 450px;
 }
 
-.rectangle h1 {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    left: 43.5%;
-    bottom: 30%;
+.products .first-set {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.rectangle p {
-    position: absolute;
-    width: 700px;
-    height: 500px;
-    left: 32%;
-    bottom: 0;
-    font-size: 1.2rem;
+.products .second-set {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/*About info section*/
+
+.abt-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+}
+
+.abt-info .saf-info {
+    background-color: #135348;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.abt-info .saf-info p {
+    width: 80%;
     text-align: center;
+    font-size: large;
 }
 
+.abt-info .saf-info a {
+    color: #FFFFFF;
+}
 
-/* Banner-2-End */
-
-.products {
-    top: 10%;
+.abt-info .saf-pic {
+    width: 35%;
+    border-radius: 10px;
+    background-color: #135348;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 500px;
-    margin-left: 6.5%;
+    align-items: center;
+    justify-content: center;
 }
 
-.prod-link {
+
+/*Home-End*/
+
+footer {
+    background-color: var(--Green);
+    position: relative;
+    height: 60px;
     display: flex;
-    flex-direction: row;
-    height: 100px;
-}
-
-.prod-link h1 {
-    margin-left: 45%;
-}
-
-.card {
-    background-color: #FFFFFF;
-    margin-top: 100px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 345px;
-    margin-right: 100px;
-    text-align: center;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card .info {
-    padding: 2px 16px;
-}
-
-
-/* About-Us */
-
-.about {
-    display: flex;
-    flex-direction: row;
-}
-
-.about .info {
-    height: 300px;
-    width: 700px;
-    margin-left: 10%;
-    transform: translateY(-90%);
-}
-
-.about img {
-    margin-left: 10%;
-    transform: translateY(-85%);
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -300,84 +257,4 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-footer span {
-    text-align: right;
-    margin-right: 50px;
-}
-
-footer button {
-    background-color: var(--Pink);
-    border-radius: 10px;
-    border: none;
-    width: 150px;
-    height: 40px;
-    font-weight: bold;
-    font-size: large;
-    color: rgb(37, 37, 37);
-    border-bottom: 2px solid var(--black-rgba);
-}
-
-@media only screen and (max-width: 1500px) {
-    nav h1 {
-        margin-left: 2%;
-    }
-    .box-icon {
-        display: none;
-    }
-    .banner {
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-    }
-    .rectangle {
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-        transform: translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .rectangle h1 {
-        bottom: 40%;
-    }
-    .rectangle p {
-        left: 26.5%;
-    }
-    .rectangle .stocks-icon {
-        width: 400px;
-        height: 300px;
-        bottom: 55%;
-        left: 26.4%;
-    }
-    .rectangle p {
-        left: 29.5%;
-        bottom: 15%;
-    }
-}
-
-@media only screen and (max-width: 920px) {
-    .rectangle .stocks-icon {
-        display: none;
-    }
-    .rectangle .info {
-        right: 25%;
-    }
-    .about {
-        transform: translateY(-200%);
-    }
-    nav h1 {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    nav h1 {
-        display: none;
-    }
-    .banner {
-        height: auto;
-    }
-    .rectangle {
-        height: auto;
-    }
 }
